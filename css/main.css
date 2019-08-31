@@ -111,6 +111,20 @@
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing; }
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 body {
-  color: yellow;
-  background-color: yellowgreen; }
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px; }
+
+.glider {
+  background-color: white; }
+  .glider__item {
+    padding: 20px;
+    border: 1px dotted red; }
