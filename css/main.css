@@ -121,10 +121,38 @@
 body {
   background-color: #eee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 40px; }
 
-.glider {
-  background-color: white; }
-  .glider__item {
-    padding: 20px;
-    border: 1px dotted red; }
+.glider-container {
+  border: 1px dotted yellowgreen;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.glider .glider-track {
+  height: 500px; }
+
+.glider__item {
+  margin: 5px;
+  border: 1px dotted red; }
+  .glider__item img {
+    width: 100%;
+    height: 100%; }
+
+.glider__button {
+  width: 50px;
+  height: 50px;
+  background-color: aqua; }
+
+.glider__prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); }
+
+.glider__next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); }
