@@ -1,11 +1,44 @@
 .topbar {
-    background-color: bisque;
-    height: 60px;
+    background-color: var(--color-topbar-background);
+    height: 4rem;
     width: 100%;
     margin-bottom: 40px;
-    padding-left: 150px;
+    padding: 0 3rem;
 
     display: flex;
+    justify-content: space-between;
+
+    &__left {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+    }
+
+    &__right {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:
+        background-color: red;
+        margin-right: 2rem;
+        padding: 7px 15px;
+    }
+
+    &__svg {
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+
 
 }
 
@@ -13,7 +46,6 @@
 
 //Arabic version.
 /////////////////
-
 
 html[dir="rtl"] .topbar {
     padding-left: 0;

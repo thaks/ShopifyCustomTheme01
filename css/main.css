@@ -152,37 +152,94 @@
   transform: translateY(-50%); }
 
 .topbar {
-  background-color: bisque;
-  height: 60px;
+  background-color: var(--color-topbar-background);
+  height: 4rem;
   width: 100%;
   margin-bottom: 40px;
-  padding-left: 150px;
-  display: flex; }
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between; }
+  .topbar__left {
+    background-color: aqua;
+    display: flex;
+    align-items: center; }
+  .topbar__right {
+    background-color: aqua;
+    display: flex;
+    align-items: center; }
+  .topbar__link {
+    background-color: red;
+    margin-right: 2rem;
+    padding: 7px 15px; }
+  .topbar__svg {
+    width: 30px;
+    height: 30px;
+    background-color: black; }
+    .topbar__svg:not(:last-of-type) {
+      margin-right: 2rem; }
 
 html[dir="rtl"] .topbar {
   padding-left: 0;
   padding-right: 150px; }
 
 .topbar {
-  background-color: bisque;
-  height: 60px;
+  background-color: var(--color-topbar-background);
+  height: 4rem;
   width: 100%;
   margin-bottom: 40px;
-  padding-left: 150px;
-  display: flex; }
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between; }
+  .topbar__left {
+    background-color: aqua;
+    display: flex;
+    align-items: center; }
+  .topbar__right {
+    background-color: aqua;
+    display: flex;
+    align-items: center; }
+  .topbar__link {
+    background-color: red;
+    margin-right: 2rem;
+    padding: 7px 15px; }
+  .topbar__svg {
+    width: 30px;
+    height: 30px;
+    background-color: black; }
+    .topbar__svg:not(:last-of-type) {
+      margin-right: 2rem; }
 
 html[dir="rtl"] .topbar {
   padding-left: 0;
   padding-right: 150px; }
+
+:root {
+  --color-topbar-background: pink; }
 
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
+  box-sizing: border-box;
   background-color: #eee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px; }
