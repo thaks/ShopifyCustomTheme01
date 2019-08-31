@@ -2,6 +2,8 @@
 @import '../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
 @import '../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss';
 
+@import './layout/topbar';
+
 *, 
 *::before, 
 *::after {
@@ -13,8 +15,6 @@ body {
     background-color: $backgroundColor;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    padding-top: 40px;
-
 }
 .glider-container {
     border: 1px dotted yellowgreen;
