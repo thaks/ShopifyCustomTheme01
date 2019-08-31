@@ -130,8 +130,8 @@ body {
   max-width: 90%;
   margin: 0 auto; }
 
-.glider .glider-track {
-  height: 500px; }
+.glider-track {
+  height: 600px; }
 
 .glider__item {
   margin: 5px;

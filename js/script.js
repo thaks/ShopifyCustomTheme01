@@ -1,10 +1,11 @@
 new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     arrows: {
         prev: '.glider__prev',
         next: '.glider__next'
     },
     draggable: true,
-    rewind: true
+    rewind: true,
+    scrollLock: true
 });
