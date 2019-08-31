@@ -7,27 +7,20 @@ new Glider(document.querySelector('.glider'), {
     },
     draggable: true,
     rewind: true,
-    scrollLock: true
+    // scrollLock: true
 });
 
 
 
 document.querySelector('.tahir-lang-button').addEventListener('click', (event) => {
-    const lang = event.target.innerHTML; 
-    const html = document.querySelector('html');
 
-
-    if( lang === "Arabic") {
-        html.setAttribute('dir', 'ltr');
+    if( event.target.innerHTML == "Arabic") {
+        document.querySelector('html').setAttribute('dir', 'rtl');
         event.target.innerHTML = "English";
-
-        return;
     } else {
-        html.setAttribute('dir', 'rtl');
+        document.querySelector('html').setAttribute('dir', 'ltr');
         event.target.innerHTML = "Arabic";
 
     }
-
-    console.log(lang);
     
 });
