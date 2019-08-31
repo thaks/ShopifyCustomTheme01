@@ -1,0 +1,8 @@
+@import './colors';
+@import '../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
+@import '../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss';
+
+body {
+    color: yellow;
+    background-color: $backgroundColor;
+}
