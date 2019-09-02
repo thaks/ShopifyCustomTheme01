@@ -10,9 +10,11 @@
 @import './base/utilities';
 
 @import './components/hero-slider';
+@import './components/desk-menu-link';
 
 @import './layout/topbar';
 @import './layout/logobar';
+@import './layout/main-nav';
 
 @import './pages/home';
 
@@ -20,11 +22,14 @@
 
 :root {
 
+    --color-01: #31da74;
+    --color-01-light: #6bffa3;
+
     // FONT SIZE
     --size-font-logobar: 1.4rem;
 
 
-    --color-main-background: #f8f8f8;
+    --color-main-background: #e2e2e2;
     --color-topbar-background: rgb(238, 254, 255);
     --color-logobar-background: #fff;
 
@@ -55,7 +60,7 @@
 *::before, 
 *::after {
     padding: 0;
-    margin: 0;
+    margin: 0 ;
     box-sizing: inherit;
 }
 
@@ -86,7 +91,7 @@ body {
     font-size: inherit;
 
     background-color: var(--color-main-background);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato' Arial, Helvetica, sans-serif;
     // font-size: 16px;
 
     @include respond(phone) {

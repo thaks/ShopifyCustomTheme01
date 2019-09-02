@@ -1,0 +1,80 @@
+.mainnav {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--color-01-light);
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+    @include respond(tab-land) {
+        padding: 0 1.5rem;
+    }
+    @include respond(big-desktop) {
+        padding: 0 10rem;
+    }
+
+    ul.cool {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        li {
+            font-size: 1.4rem;
+            // background-color: yellow;
+            padding: .8rem 1rem;
+            margin-right: 2.5rem;
+            text-transform: uppercase;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.trigger-enter .dropdown {
+                display: block;
+            }
+            &.trigger-enter-active .dropdown {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            position: relative;
+
+            .dropdown {
+                transition: opacity .1s, transform .2s;
+                opacity: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 900px;
+                height: auto;
+                display: none;
+                transform: translateY(1rem);
+                &.test-open {
+                    display: block;
+                    opacity: 1;
+                }
+
+                .transparent-margin {
+                    display: block;
+                    width: 100%;
+                    height: 1rem;
+                    background-color: transparent;
+                }
+
+                .dropdown__content {
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                    padding: 3rem;
+                }
+
+            }
+        }
+    }
+
+}
+
+

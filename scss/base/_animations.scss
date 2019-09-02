@@ -1,0 +1,23 @@
+@keyframes bounceScale {
+    0%, 20% {
+      opacity: 0;
+      border-width: 3px;
+    }
+    10% {
+      opacity: 1;
+    }
+    20%, 100% {
+      transform: scale(2);
+      border-width: 1px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20% {
+      transform: scale(1);
+    }
+    5% {
+      transform: scale(1.15);
+    }
+  }

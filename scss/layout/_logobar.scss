@@ -15,12 +15,15 @@ section.logobar {
         height: 7rem;
         padding: 0 1.5rem;
     }
+    @include respond(big-desktop) {
+        padding: 0 10rem;
+    }
 
 }
 
 figure.logo-container {
     height: 4.7rem;
-
+    margin: 0;
     @include respond(tab-land) {
         height: 3.7rem;
     }

@@ -1,5 +1,5 @@
 .topbar {
-    background-color: var(--color-topbar-background);
+    background-color: #31da74;
     height: 4rem;
     width: 100%;
     padding: 0 3rem;
@@ -11,6 +11,9 @@
     }
     @include respond(tab-land) {
         padding: 0 1.5rem;
+    }
+    @include respond(big-desktop) {
+        padding: 0 10rem;
     }
 
     &__left {

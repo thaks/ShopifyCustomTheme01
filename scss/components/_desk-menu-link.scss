@@ -1,0 +1,88 @@
+
+.view-all-button {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.4rem;
+        border: 1px solid #18b4e9;
+        display: inline-block;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        margin-bottom: 2.5rem;
+        color: #18b4e9;
+
+    }
+}
+
+.desk-hot-link-button {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.4rem;
+        text-decoration: none;
+            color: red;
+            display: block;
+            margin-bottom: .8rem;
+
+            &:last-of-type {
+                margin-bottom: 5rem;
+            }
+    }
+}
+
+.desk-menu-link-group {
+    &__heading {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            text-transform: initial;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin-bottom: 1rem;
+            transition: all 0.2s;
+        }
+        &:hover{
+            color: #18b4e9;
+            // transform: scale(1.05,1.05);
+        }
+        &.bottom-link {
+            margin-bottom: 4rem;
+        }
+
+        .shop-by-colors {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 100px;
+            display: inline-block;
+            margin-right: 1.5rem;
+            transform: translate(0, 5px);
+
+            &.red {
+                background-color: red;
+            }
+            &.blue {
+                background-color: blue;
+            }
+            &.green {
+                background-color: green;
+            }
+            &.yellow {
+                background-color: yellow;
+            }
+        }
+        &.view-more-shopby-colors {
+            margin-top: 2rem;
+            font-style: italic;
+            color: rgb(179, 179, 179);
+        }
+    }
+}
