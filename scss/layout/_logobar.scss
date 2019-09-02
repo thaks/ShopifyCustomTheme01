@@ -1,0 +1,159 @@
+section.logobar {
+    font-size: var(--size-font-logobar);
+    background-color: var(--color-logobar-background);
+    height: 8rem;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+    @include respond(tab-land) {
+        height: 7rem;
+        padding: 0 1.5rem;
+    }
+
+}
+
+figure.logo-container {
+    height: 4.7rem;
+
+    @include respond(tab-land) {
+        height: 3.7rem;
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
+
+.search {
+    margin: 0 4rem;
+    // background-color: green;
+    flex: 1 1;
+
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-land) {
+        margin:0 2rem;
+    }
+
+    &__input {
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: var(--size-font-logobar);
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: 1.3rem 2rem;
+        width: 100%;
+        margin-right: -3.5rem;
+
+        &:focus {
+            outline: none;
+            background-color: var(--color-grey-light-3);
+        }
+         
+    }
+
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3);
+    }
+    &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);
+
+        &:focus {
+            outline: none; 
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 14px;
+    }
+
+}
+
+
+
+
+
+.logobar-link-container {
+    display: flex;
+    margin-right: 2rem;
+    @include respond(tab-land) {
+        margin-right: 1.5rem;
+        // background-color: red;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:active {
+            color: #333;
+            border-right: 1px solid rgb(235, 235, 235);
+            padding: .7rem 2rem;
+            text-decoration: none;
+            font-size: var(--size-font-logobar);
+
+            display: flex;
+            align-items: center;
+
+            @include respond(tab-land) {
+                padding: .7rem 1rem;
+            }
+            @include respond(tab-port) {
+                padding: .7rem .5rem;
+            }
+            
+
+            &:last-of-type {
+                padding: .4rem 2rem 1rem 2rem;
+                font-size: 1.9rem;
+            }
+
+        }
+
+        &:hover {
+
+        }
+    }
+}
+
+.logobar__currency-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--size-font-logobar);
+    padding: .8rem 2rem;
+
+
+}
+
+button.cart {
+    border: 1.5px solid black;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: var(--size-font-logobar);
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+}
+

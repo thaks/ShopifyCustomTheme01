@@ -2,20 +2,25 @@
     background-color: var(--color-topbar-background);
     height: 4rem;
     width: 100%;
-    margin-bottom: 40px;
     padding: 0 3rem;
 
     display: flex;
     justify-content: space-between;
+    @include respond(tab-port) {
+        display: none;
+    }
+    @include respond(tab-land) {
+        padding: 0 1.5rem;
+    }
 
     &__left {
-        background-color: aqua;
+        // background-color: aqua;
         display: flex;
         align-items: center;
     }
 
     &__right {
-        background-color: aqua;
+        // background-color: aqua;
         display: flex;
         align-items: center;
 
@@ -24,25 +29,43 @@
     &__link {
         &,
         &:link,
-        &:
-        background-color: red;
-        margin-right: 2rem;
-        padding: 7px 15px;
+        &:active {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #333;
+
+            // background-color: red;
+            padding: 7px 12px;
+
+            &:not(:last-of-type) {
+                margin-right: .6rem;
+            }
+            transition: all 0.1s;
+        }
+
+        &:hover {
+            color: black;
+        }
+
     }
 
     &__svg {
-        width: 30px;
-        height: 30px;
-        background-color: black;
+        // background-color: #ddd;
         &:not(:last-of-type) {
-            margin-right: 2rem;
+            margin-right: 1.3rem;
         }
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
 }
 
-
+.tahir-lang-button {
+    display: none;
+}
 
 //Arabic version.
 /////////////////

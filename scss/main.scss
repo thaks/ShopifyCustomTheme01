@@ -12,13 +12,43 @@
 @import './components/hero-slider';
 
 @import './layout/topbar';
+@import './layout/logobar';
 
-// @import './pages/'
+@import './pages/home';
 
 @import './layout/topbar';
 
 :root {
-    --color-topbar-background: pink;
+
+    // FONT SIZE
+    --size-font-logobar: 1.4rem;
+
+
+    --color-main-background: #f8f8f8;
+    --color-topbar-background: rgb(238, 254, 255);
+    --color-logobar-background: #fff;
+
+        // LOGO THEME COLORS
+    --color-theme-primary: #18b4e9;
+    --color-theme-secondary: #8ec13f;
+
+
+    // COLORS
+
+    --color-primary: #55c57a;
+    --color-primary-light: #7ed56f;
+    --color-primary-dark: #28b485;
+
+    --color-grey-dark: #777;
+    --color-white: white;
+    --color-black: #000;
+
+    --shadow-dark:  0 2rem 6rem rgba(0,0,0,0.3);
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
 }
 
 *, 
@@ -32,36 +62,38 @@
 html {
     font-size: 62.5%;    //  1 rem =  10px;    10px/16px = 62.5%;
 
-    @include respond(tab-land) {
-        font-size: 56.25% // 1 rem = 9px, 9/16 = 56.25%
-    }
-    @include respond(tab-port) {
-        font-size: 50% // 1 rem = 8px, 8/16 = 50%
+    // @include respond(tab-land) {
+    //     font-size: 56.25% // 1 rem = 9px, 9/16 = 56.25%
+    // }
+    // @include respond(tab-port) {
+    //     font-size: 50% // 1 rem = 8px, 8/16 = 50%
 
-    }
-    @include respond(phone) {
-        font-size: 30% // 1 rem = 4.8px, 4.8/16 = 30%
+    // }
+    // @include respond(phone) {
+    //     font-size: 30% // 1 rem = 4.8px, 4.8/16 = 30%
 
-    }
-    @include respond(big-desktop) {
-        font-size: 75% // 1 rem = 12px, 12/16 = 75%
+    // }
+    // @include respond(big-desktop) {
+    //     font-size: 75% // 1 rem = 12px, 12/16 = 75%
 
-    }
+    // }
 }
 
 
 
 body {
     box-sizing: border-box;
+    font-size: inherit;
 
-
-    background-color: $backgroundColor;
+    background-color: var(--color-main-background);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    // font-size: 16px;
 
     @include respond(phone) {
         background-color: red;
     }
+
+    // padding: 4rem;
 }
 
 
